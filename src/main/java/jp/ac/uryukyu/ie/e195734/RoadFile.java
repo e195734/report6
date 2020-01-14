@@ -17,7 +17,7 @@ public class RoadFile {
                 return list;
             }
             else{
-                System.out.println("ファイルを読み込みしました。");
+                System.out.println("ファイルを読み込みました。");
             }
 
             FileReader fileReader = new FileReader(file);

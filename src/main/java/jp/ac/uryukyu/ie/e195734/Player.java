@@ -10,7 +10,7 @@ public class Player {
         for(String sd:stringData.split(",")){
             String[] spd = sd.split(":");
             if(spd[0].equals("name")){
-                this.name = spd[0];
+                this.name = spd[1];
             }
             else{
                 this.stat.put(spd[0],Integer.parseInt(spd[1]));
