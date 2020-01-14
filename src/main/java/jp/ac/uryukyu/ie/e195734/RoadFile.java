@@ -13,8 +13,11 @@ public class RoadFile {
             File file = new File(path);
 
             if (!file.exists()) {
-                System.out.print("ファイルが存在しません");
+                System.out.println("ファイルが存在しません");
                 return list;
+            }
+            else{
+                System.out.println("ファイルを読み込みしました。");
             }
 
             FileReader fileReader = new FileReader(file);

@@ -6,8 +6,16 @@ public class Player {
     private String name;
     private HashMap<String,Integer> stat = new HashMap<>();
 
-    Player(HashMap<String,Integer> stat){
-
+    Player(String stringData){
+        for(String sd:stringData.split(",")){
+            String[] spd = sd.split(":");
+            if(spd[0].equals("name")){
+                this.name = spd[0];
+            }
+            else{
+                this.stat.put(spd[0],Integer.parseInt(spd[1]));
+            }
+        }
     }
 
     public String getName(){
