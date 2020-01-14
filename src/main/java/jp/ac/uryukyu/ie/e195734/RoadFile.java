@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class RoadFile {
-    ArrayList<String> readLine(String path) {
+    public static ArrayList<String> readLine(String path) {
         ArrayList<String> list = new ArrayList<>();
         try {
             File file = new File(path);
@@ -31,4 +31,5 @@ public class RoadFile {
         }
         return list;
     }
+
 }
