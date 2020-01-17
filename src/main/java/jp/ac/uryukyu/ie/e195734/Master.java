@@ -3,8 +3,15 @@ package jp.ac.uryukyu.ie.e195734;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Masterクラス。
+ * crated by Naoru Chinen
+ */
 public class Master {
 
+    /**
+     * 処理を始めるメソッド
+     */
     public void master(){
         String gcl = utils.GetCommandLine();
         if(otherAction(gcl)==-1){
@@ -13,11 +20,15 @@ public class Master {
         mainAction(gcl);
     }
 
-    void roadFile() {
-        System.out.println("プレイヤーデータのファイルを指定してください");
+
+    /**
+     * ファイルを読み込んで検証するプレイヤーの追加を行います。
+     */
+    public void roadFile() {
+        System.out.println("プレイヤーデータのファイルを必要があれば指定してください。");
         String path = utils.GetCommandLine();
         if(path.equals("")){
-            path = "/Users/naoru/Desktop/data.txt";
+            path = "/Users/naoru/Desktop/playerData.txt";
         }
         ArrayList<String> playersStringData = RoadFile.readLine(path);
         for (String playerStringData : playersStringData) {
@@ -25,7 +36,7 @@ public class Master {
         }
     }
 
-    int otherAction(String gcl){
+    private int otherAction(String gcl){
         if(gcl.equals("fin.")){
             System.out.println("プログラムを終了します。");
             System.exit(0);

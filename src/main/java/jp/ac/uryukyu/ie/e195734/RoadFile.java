@@ -6,7 +6,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * RoadFileクラス。
+ * created by Naoru Chinen
+ */
 public class RoadFile {
+    /**
+     * ファイルを読み込み1行ずつに分け返します。
+     * @param path String ファイルを読み込む絶対パス
+     * @return ArrayList
+     */
     public static ArrayList<String> readLine(String path) {
         ArrayList<String> list = new ArrayList<>();
         try {
