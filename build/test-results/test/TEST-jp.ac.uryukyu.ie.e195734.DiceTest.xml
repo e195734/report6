@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="jp.ac.uryukyu.ie.e195734.DiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-20T15:03:32" hostname="naoruMacBookAir.local" time="0.045">
+  <properties/>
+  <testcase name="dice()" classname="jp.ac.uryukyu.ie.e195734.DiceTest" time="0.045"/>
+  <system-out><![CDATA[正しくダイスの条件を入力してください
+例：1d100
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
