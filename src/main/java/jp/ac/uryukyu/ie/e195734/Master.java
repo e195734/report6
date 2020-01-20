@@ -27,9 +27,6 @@ public class Master {
     public void roadFile() {
         System.out.println("プレイヤーデータのファイルパスを指定してください。");
         String path = utils.GetCommandLine();
-        if(path.equals("")){
-            path = "playerData.txt";
-        }
         ArrayList<String> playersStringData = RoadFile.readLine(path);
         for (String playerStringData : playersStringData) {
             Players.players.add(new Player(playerStringData));
